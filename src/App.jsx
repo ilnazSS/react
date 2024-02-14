@@ -1,16 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import '../src/index.css'
 import Header from './components/Header/Header'
-import Banner from './components/Banner/Banner'
+import Start from './pages/Start/Start'
+import Catalog from './pages/Catalog/Catalog'
+import Information from './pages/Information/Information'
+import {Routes,Route} from 'react-router-dom'
 
 function App() {
 
   return (
     <>
       <Header />
-      <Banner />
+      <Routes>
+        <Route path='/' element= {<Start/>} />
+        <Route path='/catalog' element= {<Catalog/>} />
+        <Route path='/information' element= {<Information/>} />
+      </Routes>
     </> 
 
     

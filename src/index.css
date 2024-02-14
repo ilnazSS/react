@@ -66,3 +66,51 @@ header{
   color: white;
   border-radius: 20px;
 }
+.startCatalog{
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.9);
+}
+.sContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tow{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: white;
+  font-size: 18px;
+  background-color: black;
+}
+.tow h2{
+  padding: 15px;
+}
+.towtow{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.nad{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.price{
+  font-size: 24px;
+}
+.cContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 15px;
+}
+.catalog_title{
+  padding: 20px;
+  text-align: center;
+  font-size: 54px;
+  color: white;
+}
+.information{
+  padding: 50px 0px;
+}

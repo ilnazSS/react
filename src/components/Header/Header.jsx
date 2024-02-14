@@ -3,6 +3,9 @@ import ch from '/public/Header/ch.png'
 import ic1 from '/public/Header/ic1.png'
 import ic2 from '/public/Header/ic2.png'
 import ic3 from '/public/Header/ic3.png'
+
+import {Link} from 'react-router-dom'
+
 export default function Header() {
  return(
      <header>
@@ -12,10 +15,10 @@ export default function Header() {
                     <img src={headerLogo} className="headerLogo" />
                     <nav className="header_nav">
                         <img src={ch} className="headerLogo" />
-                        <a href="">ГЛАВНАЯ</a>
-                        <a href="">КАТАЛОГ</a>
+                        <Link to="/">ГЛАВНАЯ</Link>
+                        <Link to="/catalog">КАТАЛОГ</Link>
                         <img src={ch} className="headerLogo" />
-                        <a href="">ИНФОРМАЦИЯ</a>
+                        <Link to="/information">ИНФОРМАЦИЯ</Link>
                     </nav>
                 </div>
                 <div className="h-icons">
