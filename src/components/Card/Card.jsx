@@ -3,8 +3,10 @@ import plus from '/public/Catalog/+.png'
 import tow from '/public/Catalog/tow.png'
 
 
+
 export default function Card({name,price}){
     return(
+
         <div className="tow">
             <img src={tow} alt="" />
             <h2>{name}</h2>
