@@ -12,6 +12,9 @@ header{
   padding: 50px 0px;
   width: 100%;
 }
+body{
+  background-color: gray;
+}
 .container{
   margin: 0 auto;
   max-width: 1300px;
@@ -92,11 +95,16 @@ header{
   padding: 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nad{
   display: flex;
   align-items: center;
   gap: 10px;
+  color: white;
+}
+.nad a{
+  color: white;
 }
 .price{
   font-size: 24px;
@@ -115,4 +123,23 @@ header{
 }
 .information{
   padding: 50px 0px;
+  color: white;
+}
+.product{
+  padding: 50px;
+  background-color: grey;
+  color: white;
+  font-size: 24px;
+}
+.p-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 200px;
+}
+.p-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
 }

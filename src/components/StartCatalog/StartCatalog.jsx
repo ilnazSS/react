@@ -12,14 +12,11 @@ export default function Header() {
      <section className="startCatalog">
          <div className="container">
              <div className="sContainer">
-                 {catalog.map((card) =>{
+                 {catalog.map((card,index) =>{
                      return(
-                         <Card name={card.name} price={card.price}/>
+                         <Card key={index} {...card}/>
                      )
                  })}
-                 
-                 <Card name="Футболка" price="5000"/>
-                 <Card name="Свитер" price="Бесценно"/>
              </div>
          </div>
      </section>
