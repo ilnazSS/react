@@ -13,7 +13,7 @@ export default function Card({name,price,id}){
             <div className="towtow">
                 <p className="price">{price} ₱</p>
                 <div className="nad">
-                    <Link to={`${id}`}>Подробнее</Link>
+                    <Link to={`/catalog/${id}`}>Подробнее</Link>
                     <img src={heart} alt="" />
                     <img src={plus} alt="" />
                 </div>

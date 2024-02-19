@@ -143,3 +143,34 @@ body{
   align-items: flex-start;
   gap: 25px;
 }
+.search{
+  border: white 2px solid;
+  background: none;
+  padding: 10px 30px;
+  margin: 10px 10px;
+  border-radius: 20px;
+  color: white;
+}
+.er{
+  color: white;
+}
+.users{
+  padding: 50px 0px;
+  color: white;
+}
+.users ul{
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.users li{
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 18px;
+}
+.users h1{
+  margin: 20px 0px;
+  font-size: 32px;
+}

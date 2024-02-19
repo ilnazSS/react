@@ -5,6 +5,7 @@ import Start from './pages/Start/Start'
 import Catalog from './pages/Catalog/Catalog'
 import CardPage from './pages/CardPage/CardPage'
 import Information from './pages/Information/Information'
+import UsersPage from './pages/UsersPage/UsersPage'
 import {Routes,Route} from 'react-router-dom'
 
 function App() {
@@ -15,9 +16,9 @@ function App() {
       <Routes>
         <Route path='/' element= {<Start/>} />
         <Route path='/catalog' element= {<Catalog/>} />
-        <Route path='/:id' element= {<CardPage/>} />
         <Route path='/catalog/:id' element= {<CardPage/>} />
         <Route path='/information' element= {<Information/>} />
+        <Route path='/users' element= {<UsersPage/>} />
       </Routes>
     </> 
 

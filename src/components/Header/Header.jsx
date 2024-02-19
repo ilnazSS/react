@@ -18,6 +18,7 @@ export default function Header() {
                         <Link to="/">ГЛАВНАЯ</Link>
                         <Link to="/catalog">КАТАЛОГ</Link>
                         <img src={ch} className="headerLogo" />
+                        <Link to="/users">ПОЛЬЗОВАТЕЛИ</Link>
                         <Link to="/information">ИНФОРМАЦИЯ</Link>
                     </nav>
                 </div>

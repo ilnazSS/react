@@ -6,20 +6,37 @@ import tow from '/public/Catalog/tow.png'
 import Card from '../../components/Card/Card'
 
 import {catalog} from '../../pages/data.js'
+import { useState } from 'react'
 
 export default function CatalogPage (){
+
+    const[query,setQuery] = useState("")
+
+    function search (e){
+        setQuery(e.target.value)
+        console.log(query);
+    }
+
+    const filterProducts = catalog.filter((item) => item.name.toLowerCase().includes(query.toLowerCase()))
     return(
         <section className="startCatalog">
          <div className="container">
-             <h1 className='catalog_title'>Страница каталога</h1>
-             <div className="cContainer">
-                {catalog.map((card,index) =>{
+             <input className='search' type="search" name='search' placeholder='Поиск' onChange={search} />
+             <div className="sContainer">
+                 
+                 {
+
+                 filterProducts.length ?
+
+                 filterProducts.map((card,index) =>{
                      return(
                          <Card key={index} {...card}/>
                      )
-                 })}
+                 })
+                : <h2 className='er'>Нет результатов</h2>
+                }
              </div>
          </div>
-     </section>        
+     </section>       
     )
 }
