@@ -20,6 +20,8 @@ export default function Header() {
                         <img src={ch} className="headerLogo" />
                         <Link to="/users">ПОЛЬЗОВАТЕЛИ</Link>
                         <Link to="/information">ИНФОРМАЦИЯ</Link>
+                        <img src={ch} className="headerLogo" />
+                        <Link to="/create">ДОБАВИТЬ ТОВАР</Link>
                     </nav>
                 </div>
                 <div className="h-icons">

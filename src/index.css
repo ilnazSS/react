@@ -174,3 +174,50 @@ body{
   margin: 20px 0px;
   font-size: 32px;
 }
+.add{
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.add input{
+  border: 2px solid white;
+  color: white;
+  width: 25%;
+  background: none;
+  text-align: center;
+  outline: none;
+  padding: 10px 30px;
+}
+.add textarea{
+  border: 2px solid white;
+  color: white;
+  background: none;
+  text-align: center;
+  width: 25%;
+  outline: none;
+  padding: 10px 30px;
+}
+.add button{
+  border: 2px solid white;
+  color: white;
+  background: black;
+  outline: none;
+  width: 25%;
+  padding: 10px 30px;
+}
+.add label{
+  color: white;
+  font-size: 18px;
+}
+.addForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.addForm p{
+  color: white;
+}

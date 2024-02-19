@@ -26,7 +26,6 @@ export default function UsersPage(){
                                 Имя пользователя: {user.name}<br></br><br></br>                            Почта: {user.email}
                             </li>
                         )
-                        
                     })
                     }
                 </ul>
