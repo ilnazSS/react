@@ -17,13 +17,13 @@ export default function CreatePage(){
 
     return(
         <section className="add" onSubmit={createForm}>
-            <h1>Добавление</h1>
+            <h1>Создание заказа</h1>
             <form className="addForm" action="" method="post">
                 <label htmlFor="title">title</label>
                 <input type="text" name="title"/><br></br>
                 <label htmlFor="title">body</label>
                 <textarea name="body" id="" cols="25" rows="5"></textarea><br></br>
-                <button type="submit">Добавить</button><br></br>
+                <button type="submit">Создать</button><br></br>
                 <p>{message}</p>
             </form>
         </section>
