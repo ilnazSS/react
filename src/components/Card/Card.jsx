@@ -2,7 +2,6 @@ import heart from '/public/Catalog/heart.png'
 import plus from '/public/Catalog/+.png'
 import tow from '/public/Catalog/tow.png'
 
-import zakazModal from '../ZakazModal/ZakazModal'
 import Modalka from '../Modalka/Modalka'
 
 
