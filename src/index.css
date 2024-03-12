@@ -91,6 +91,9 @@ body{
 .tow h2{
   padding: 15px;
 }
+.tow img{
+  width: 40%;
+}
 .towtow{
   padding: 15px;
   display: flex;
@@ -238,4 +241,10 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.basket_title{
+  color: white;
+}
+.basket_subtitle{
+  color: white;
 }

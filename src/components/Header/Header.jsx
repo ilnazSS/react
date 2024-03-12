@@ -7,7 +7,7 @@ import ic3 from '/public/Header/ic3.png'
 import {Link} from 'react-router-dom'
 import Modalka from '../Modalka/Modalka'
 
-export default function Header() {
+export default function Header({basket}) {
  return(
      <header>
          <div className="container">
@@ -23,6 +23,7 @@ export default function Header() {
                         <Link to="/information">ИНФОРМАЦИЯ</Link>
                         <img src={ch} className="headerLogo" />
                         <Link to="/create">ДОБАВИТЬ ТОВАР</Link>
+                        <Link to="/basket">Корзина({basket.length})</Link>
                         <Link to="/"><Modalka></Modalka></Link>
                     </nav>
                 </div>

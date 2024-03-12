@@ -8,7 +8,7 @@ import Card from '../../components/Card/Card'
 import {catalog} from '../../pages/data.js'
 import { useState } from 'react'
 
-export default function CatalogPage (){
+export default function CatalogPage ({addToBasket, basket}){
 
     const[query,setQuery] = useState("")
     const[sorting, setSorting] = useState("")
@@ -37,6 +37,10 @@ export default function CatalogPage (){
                 return [...catalog].sort((a,b) => a.price - b.price)
             case 'price_desc':
                 return [...catalog].sort((a,b) => b.price - a.price)
+            case 'ost_asc':
+                return [...catalog].sort((a,b) => a.ost - b.ost)
+            case 'ost_desc':
+                return [...catalog].sort((a,b) => b.ost - a.ost)
             default:
                 return catalog
         }
@@ -50,6 +54,10 @@ export default function CatalogPage (){
                  <option value="price_asc">По возрастанию цены</option>
                  <option value="price_desc">По убыванию цены</option>
              </select>
+             <select onChange={sort}>
+                 <option value="ost_asc">По остатку ↑</option>
+                 <option value="ost_desc">По остатку ↓</option>
+             </select>
              <button className="search" onClick={()=>setCategory(0)}>Всё</button>
              <button className="search" onClick={()=>setCategory(1)}>Рубашки</button>
              <button className="search" onClick={()=>setCategory(2)}>Футболки</button>
@@ -60,7 +68,7 @@ export default function CatalogPage (){
                  sortAndfilterProducts.length ?
                  sortAndfilterProducts.map((card,index) =>{
                      return(
-                         <Card key={index} {...card}/>
+                         <Card key={index} {...card} addCard={() => addToBasket([...basket, card.id])}/>
                      )
                  })
                 : <h2 className='er'>Нет результатов</h2>
